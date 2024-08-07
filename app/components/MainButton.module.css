@@ -1,0 +1,28 @@
+.but{
+    color: #d9d9d9;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+    /* margin: 2.7rem; */
+    padding: 0.3rem;
+    padding-inline: 2rem;
+    display: inline-block;
+    transition: .2s;
+    border-radius: 0.3rem;
+    border-bottom: 0px solid #d9d9d9;
+}
+
+.but:hover{
+    color: #ffff;
+    transform: scale(1.1);
+    border-bottom: 2px solid #d9d9d9;
+    border-radius: 1.5rem;
+    transition: 0.5s;
+    background-color: #0000001f;
+}
+
+.but:active{
+    border: 2px solid #ffff;
+    transform: scale(0.9);
+    border-radius: 1.9rem;
+}

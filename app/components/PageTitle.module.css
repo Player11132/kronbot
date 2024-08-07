@@ -1,0 +1,29 @@
+.Vtitle {
+    font-size: 7rem;
+    font-weight: 900;
+    color: white;
+    margin: 2rem;
+    padding-left: 5rem;
+    position: relative;
+    top: 0;
+} 
+
+.Htitle{
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    font-size: 6rem;
+    font-weight: 800;
+    color: white;
+    display: inline;
+    margin: 2rem;
+}
+
+.cont{
+    position: relative;
+    text-align: center;
+    overflow: visible;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
