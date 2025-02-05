@@ -1,0 +1,79 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.cont .title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+.area {
+  min-width: 84rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: #1d1a1b;
+}
+
+.zone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  row-gap: 1rem;
+  border: solid white 0.2rem;
+  padding: 1rem;
+  min-height: 35rem;
+  max-height: 55rem;
+  min-width: 84rem;
+  border-radius: 4rem;
+  overflow-y: auto;
+}
+
+.tallZone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  row-gap: 1rem;
+  border: solid white 0.2rem;
+  padding: 1rem;
+  min-height: 40rem;
+  max-height: 60rem;
+  min-width: 84rem;
+  border-radius: 4rem;
+  overflow-y: auto;
+}
+
+.area h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  font-size: 2rem;
+}
+
+.buttons button {
+  height: 5rem;
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4rem;
+  transition: 0.2s;
+
+  color: white;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.buttons button:active {
+  transform: scale((0.9));
+}

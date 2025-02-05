@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 0.2rem, var(--mainColor), solid;
+  margin: 0 auto;
+  height: 70vh;
+  width: 80%;
+}
+
+.download {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--mainColor);
+  transition: 0.5;
+}
+
+.download:hover {
+  transform: scale(1.1);
+}
+
+.download:active {
+  transform: scale(0.9);
+}

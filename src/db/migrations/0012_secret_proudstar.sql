@@ -1,0 +1,1 @@
+ALTER TABLE "seasons" ADD COLUMN "played" integer NOT NULL;

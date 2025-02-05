@@ -1,0 +1,11 @@
+.cont {
+  background-color: var(--bgColor);
+  opacity: 1;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--mainColor),
+    var(--mainColor) 10px,
+    var(--accentColor) 10px,
+    var(--accentColor) 20px
+  );
+}

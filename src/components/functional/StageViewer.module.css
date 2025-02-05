@@ -1,0 +1,62 @@
+.container, .flipped{
+    display: flex;
+    flex-direction: column;
+    border-top: 2rem solid var(--mainColor);
+    min-height: 25rem;
+
+
+    background: var(--bgColor);
+    background: linear-gradient(90deg, var(--bgColor) 0%, var(--bgColor) 40%, rgba(29,26,27,0) 100%);
+}
+
+.flipped{
+    border-top: 2rem solid var(--accentColor);
+    background: var(--bgColor);
+    background: linear-gradient(-90deg, var(--bgColor) 0%, var(--bgColor) 40%, rgba(29,26,27,0) 100%);
+}
+
+.container img, .flipped img{
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.container button, .flipped button{
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--mainColor);
+    border: none;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+.container img, .flipped img {
+    width: 40rem;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--mainColor);
+}
+
+
+.flipped button{
+    background-color: var(--accentColor);
+}
+
+.container button:hover, .flipped button:hover{
+    transform: scale(1.1);
+}
+
+.container button:active, .flipped button:active{
+    transform: scale(0.9);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+.flipped .content{
+    flex-direction: row-reverse;
+}

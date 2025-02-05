@@ -1,0 +1,92 @@
+main {
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+  justify-content: center;
+
+  background: rgb(28, 26, 27);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.233) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.title {
+  word-spacing: 1rem;
+  font-size: 5rem;
+}
+
+.filterBar {
+  display: flex;
+  width: 100%;
+
+  padding-top: 1rem;
+  min-height: 5rem;
+  background-color: #471217;
+  border-bottom: #9b3943 solid 0.5rem;
+}
+
+.filterBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: "Roboto Mono";
+
+  width: 100%;
+
+  padding-inline: 1.5rem;
+  height: 5rem;
+
+  border-right: 0.2rem solid white;
+  transition: 0.5s;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  width: min(40rem, 100%);
+}
+
+@media only screen and (max-width: 786px) {
+  .filterBut {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: large;
+    height: 4rem;
+    background-color: #471217;
+    border: 0;
+    z-index: 1;
+  }
+
+  .filterBar {
+    height: 3.5rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 0;
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+
+  .open{
+    transition: 0.5s;
+    height: fit-content;
+  }
+}

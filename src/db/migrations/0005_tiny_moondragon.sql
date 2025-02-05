@@ -1,0 +1,1 @@
+ALTER TABLE "seazon" RENAME TO "seazons";

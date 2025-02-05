@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 20rem;
+  gap: 1rem;
+  top: 0;
+  padding: 0.5rem;
+  transition: 0.2s;
+  filter: drop-shadow(0px 2px 0px #241a1d);
+  margin: 0 auto;
+  
+}
+
+
+.button img {
+  max-height: 6.5rem;
+  user-select: none;
+  transition: 0.4s;
+}
+
+.button :hover{
+  filter: drop-shadow(0px 3px 0px #8d0933);
+}
+
+.button img :hover{
+  filter: drop-shadow(0px 3px 0px #8d0933);
+}

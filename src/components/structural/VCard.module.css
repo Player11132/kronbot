@@ -1,0 +1,88 @@
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #250B0A;
+    color: white;
+    overflow: hidden;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    max-width: 30rem;
+    max-height: 45rem;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.small{
+    background-color: #250B0A;
+    color: white;
+    overflow: hidden;
+    padding: 0.4rem;
+    max-width: 30rem;
+    max-height: 40rem;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.card img{
+    margin:0 auto;
+    height:27rem;
+    object-fit:contain;
+    border-bottom: solid #7c1838 0.5rem;
+}
+
+.card:hover{
+    z-index: 100;
+    transform: scale(1.2);
+}
+
+.card:active{
+    transform: scale(0.9);
+}
+
+.small:hover{
+    z-index: 100;
+    transform: scale(1.1);
+}
+
+.small:active{
+    transform: scale(0.9);
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.small img{
+    height:20rem;
+}
+
+.subtitle{
+    background-color: #00000000;
+    color:white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 786px) {
+    .card img{
+        max-width: 20rem;
+        max-height: 30rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+    }
+}

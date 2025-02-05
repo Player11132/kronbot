@@ -1,0 +1,49 @@
+.popUp {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1a1b;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.cont {
+  z-index: 1000;
+  position: fixed;
+
+  justify-content: center;
+  align-content: center;
+
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1d1a1bad;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popUp button {
+  height: 5rem;
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+
+  color: white;
+}
+
+.popUp button:disabled {
+  color: grey;
+  scale: (0.9);
+}

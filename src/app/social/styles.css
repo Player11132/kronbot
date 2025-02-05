@@ -1,0 +1,89 @@
+main {
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+  justify-content: center;
+
+  background: rgb(28, 26, 27);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.233) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.content h2 {
+  font-size: 4rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.socialZone {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #471217;
+  border-top: solid 0.5rem #9b3943;
+  border-bottom: solid 0.5rem #9b3943;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  background: linear-gradient(90deg, rgba(29,26,27,1) 0%, rgba(29,26,27,1) 40%, rgba(29,26,27,0.5242471988795518) 80%, rgba(29,26,27,0) 100%);
+}
+
+
+.socialZone .content {
+  max-width: 60%;
+  text-align: left;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.socialZone iframe {
+  min-width: 480px;
+  min-height: 315px;
+}
+
+.socialZone i {
+  width: 20rem;
+  font-size: 18rem;
+}
+
+@media only screen and (max-width: 786px) {
+  .socialZone {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .socialZone .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    max-width: 100%;
+    font-size: 1rem;
+
+  }
+}

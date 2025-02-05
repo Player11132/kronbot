@@ -1,0 +1,12 @@
+.bin {
+  user-select: none;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: monospace;
+  word-wrap: break-word;
+  line-height: 0.8em;
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,171 @@
+.container {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  overflow: visible;
+  user-select: none;
+
+  height: 4.7rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  justify-content: space-evenly;
+
+  padding: 1rem;
+
+  /* border-radius: 1rem;
+  border-bottom: solid white 0.1rem; */
+
+  background-color: #1d1a1b;
+
+  -webkit-box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+
+  transition: 0.5s;
+}
+
+/* .container:hover{
+  border-bottom: black solid 0.1rem;
+} */
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.homeBut {
+  display: inline-block;
+  position: relative;
+  top: 2rem;
+  width: 12rem;
+  /* height: 10rem; */
+  margin: 0 auto;
+  filter: drop-shadow(0px 10px 0px #1d1a1b);
+  transition: 0.5s;
+}
+
+.homeBut:hover {
+  transform: scale(1.1);
+  top: 2.2rem;
+  filter: drop-shadow(0px 10px 0px #8d0933);
+  transition: 0.2s;
+}
+
+.homeBut:hover .container {
+  border-bottom: solid #8d0933 0.2rem;
+}
+
+.homeBut:active {
+  transform: scale(0.9);
+  top: 2rem;
+  filter: drop-shadow(0px 10px 0px #7c1838);
+  transition: 0.2s;
+}
+
+.phoneCont {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 6rem;
+
+  /* border-radius: 1rem;
+  border-bottom: solid white 0.1rem; */
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  background-color: #1d1a1b;
+
+  -webkit-box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 81px 11px rgba(0, 0, 0, 0.75);
+
+  transition: 0.5s;
+}
+
+.phoneCont .homeBut {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+
+  /* height: 10rem; */
+  top: 0;
+  margin-left: 2rem;
+  padding: 0;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.phoneCont .homeBut img {
+  height: 6.2rem;
+}
+
+.sideBar .buttonContainer {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  align-content: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideBar .selected {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  align-content: left;
+  justify-content: space-between;
+  align-items: center;
+  border-left: white solid 0.5rem;
+  -webkit-box-shadow: inset 23px 0px 29px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 23px 0px 29px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 23px 0px 29px -6px rgba(0, 0, 0, 0.75);
+}
+
+.phoneCont .sideBar {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: #1d1a1b;
+  padding-top: 0;
+  padding-inline: 1rem;
+  left: 0;
+  border-top: solid white 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  transition: 0.5s;
+}
+
+.image {
+  z-index: 200;
+  width: 10rem;
+  top: 0;
+}
+
+.phoneCont .sideBar img {
+  width: 100%;
+  position: relative;
+  left: -5rem;
+  bottom: -20%;
+}

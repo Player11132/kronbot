@@ -1,0 +1,29 @@
+main{
+  z-index: 100;
+}
+
+.customCont {
+  z-index: 100;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  display: block;
+
+  overflow: visible;
+
+  padding-top: 7rem;
+  background-color: var(--bgColor);
+  background: var(--bgColor);
+  background-image: radial-gradient(var(--mainColor), 0.2rem, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  animation: mainbg 300s linear infinite;
+  /* background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0,0,0) 10%, rgba(0, 0, 0, 0.233) 60%, rgba(0,0,0,0) 100%); */
+}
+
+@keyframes mainbg {
+  to {
+    background-position: bottom;
+  }
+}

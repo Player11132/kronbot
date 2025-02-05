@@ -1,0 +1,59 @@
+.dashCont {
+  z-index: 100;
+  background-color: rgb(49, 13, 13);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.dialog {
+  z-index: 1000;
+  position: fixed;
+
+  justify-content: center;
+  align-content: center;
+
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1d1a1bad;
+  backdrop-filter: blur(10px);
+}
+
+.dialog input {
+  color: black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4rem;
+  width: 30rem;
+  height: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.dialog select {
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  font-size: x-large;
+}
+
+.dialog img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.view {
+  margin-left: 25rem;
+  padding: 1rem;
+  overflow: hidden;
+}

@@ -1,0 +1,33 @@
+.but {
+  color: #d9d9d9;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  /* margin: 2.7rem; */
+  padding: 0.3rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+  font-family: 'AMELIA';
+}
+
+
+.but:hover {
+  color: white;
+  transform: scale(1.1);
+  /* border-bottom: 2px solid #d9d9d9; */
+  transition: 0.4s;
+  background-color: #00000057;
+}
+
+.but:active {
+  /* border: 2px solid #ffff; */
+  transform: scale(0.9);
+  border-radius: 1rem;
+}

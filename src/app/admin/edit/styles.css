@@ -1,0 +1,106 @@
+
+.md-editor {
+    --md-color: white;
+    --md-hover-color: #47171a;
+    --md-bk-color: #47171a;
+    --md-bk-color-outstand: #47171a;
+    --md-bk-hover-color: #47171a;
+    --md-border-color:#351214;
+    --md-border-hover-color:#351214;
+    --md-border-active-color:#351214;
+    --md-modal-mask: #00000073;
+    --md-modal-shadow: 0px 6px 24px 2px #00000066;
+    border: 0.1rem solid #351214;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 100vh;
+    text-align: left;
+  }
+
+.Area{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    background-color: #1D1A1B;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.Att{
+    border: white 0.2rem solid;
+    border-radius: 4rem;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Area button{
+    height: 5rem;
+    width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4rem;
+
+    color: white;
+}
+
+.Area select{
+    width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    font-size: x-large;
+}
+
+
+.Area h1{
+    font-size: 2rem;
+}
+
+.Area input{
+    color:black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4rem;
+    width: 30rem;
+    height: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.card{
+    background-color: #2b2728;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 4rem;
+}
+
+.preview{
+    margin: auto;
+    width: 40rem;
+    height: 25rem;
+    border: 0.2rem solid white;
+    border-radius: 4rem;
+    padding: 0.2rem;
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+
+    background-color: rgb(49, 13, 13);
+
+    color: white;
+    text-align: center;
+
+    padding: 2rem;
+    overflow: visible;
+    min-height: 100vh;
+    min-width: 100%;
+}
+

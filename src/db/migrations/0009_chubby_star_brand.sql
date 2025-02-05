@@ -1,0 +1,1 @@
+ALTER TABLE "seasons" RENAME COLUMN "logoURL" TO "logo";

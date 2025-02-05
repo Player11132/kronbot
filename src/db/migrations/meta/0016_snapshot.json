@@ -1,0 +1,403 @@
+{
+  "id": "3dd3ea67-fbb3-4a59-bed2-073e19ec6873",
+  "prevId": "4f45d9b6-7bb4-4219-a2a5-0a29f4b9fdbe",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.admins": {
+      "name": "admins",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "username": {
+          "name": "username",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password": {
+          "name": "password",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "admins_username_unique": {
+          "name": "admins_username_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "username"
+          ]
+        }
+      }
+    },
+    "public.members": {
+      "name": "members",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "role_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cathegory": {
+          "name": "cathegory",
+          "type": "cathegory_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "photo_url": {
+          "name": "photo_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.posts": {
+      "name": "posts",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "post_cathegories",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "body": {
+          "name": "body",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "thumbnail_url": {
+          "name": "thumbnail_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "published": {
+          "name": "published",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false,
+          "default": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.seasons": {
+      "name": "seasons",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "default": {
+          "name": "default",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "logo": {
+          "name": "logo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "played": {
+          "name": "played",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "wins": {
+          "name": "wins",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "points": {
+          "name": "points",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "robotmodelurl": {
+          "name": "robotmodelurl",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "book": {
+          "name": "book",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "robotdesc": {
+          "name": "robotdesc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "meetstitle": {
+          "name": "meetstitle",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "meets": {
+          "name": "meets",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "mPosts": {
+          "name": "mPosts",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "mimgs": {
+          "name": "mimgs",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "demostitle": {
+          "name": "demostitle",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "demos": {
+          "name": "demos",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "dposts": {
+          "name": "dposts",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dimg": {
+          "name": "dimg",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "regionals": {
+          "name": "regionals",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "rPost": {
+          "name": "rPost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rimg": {
+          "name": "rimg",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nationals": {
+          "name": "nationals",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nPost": {
+          "name": "nPost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nimg": {
+          "name": "nimg",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "internationals": {
+          "name": "internationals",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "iPost": {
+          "name": "iPost",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "iimg": {
+          "name": "iimg",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "awards": {
+          "name": "awards",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "awardsdesc": {
+          "name": "awardsdesc",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "gallery": {
+          "name": "gallery",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bgcolor": {
+          "name": "bgcolor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "maincolor": {
+          "name": "maincolor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "acColor": {
+          "name": "acColor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "published": {
+          "name": "published",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {
+    "public.cathegory_enum": {
+      "name": "cathegory_enum",
+      "schema": "public",
+      "values": [
+        "Mentor",
+        "Member",
+        "Volunteer"
+      ]
+    },
+    "public.role_enum": {
+      "name": "role_enum",
+      "schema": "public",
+      "values": [
+        "Mechanic",
+        "3D Modeler",
+        "Programmer",
+        "Public Relations"
+      ]
+    },
+    "public.post_cathegories": {
+      "name": "post_cathegories",
+      "schema": "public",
+      "values": [
+        "Announcments",
+        "Events",
+        "Technical",
+        "Other"
+      ]
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
